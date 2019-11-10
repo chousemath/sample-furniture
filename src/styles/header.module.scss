@@ -1,0 +1,97 @@
+.main-container {
+    font-family: 'Roboto', sans-serif;
+    padding: 0 16px;
+    width: 100vw;
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #edf2f4;
+    .my-logo-container {
+        width: 150px;
+        display: flex;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        .my-logo-inner {
+            width: 75px;
+            height: 70px;
+            overflow: hidden !important;
+            .my-logo-image {
+                height: 100%;
+                width: auto;
+            }
+        }
+    }
+    .icon-container {
+        margin: 0 8px 0 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .small-icon-container {
+            width: 24px;
+            height: 24px;
+            overflow: hidden;
+            .small-icon {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    .text-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        font-size: 16px;
+    }
+    .search-container {
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+        padding: 0 8px;
+        div {
+            width: 100%;
+        }
+    }
+    .sale-container {
+        padding: 0 16px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        .sale-text {
+            color: red;
+        }
+    }
+    .account-container {
+        display: flex;
+        flex-direction: row;
+        .logo-container {
+            @extend .icon-container;
+        }
+        .text {
+            @extend .text-container;
+        }
+    }
+    .lists-container {
+        display: flex;
+        flex-direction: row;
+        .logo-container {
+            @extend .icon-container;
+        }
+        .text {
+            @extend .text-container;
+        }
+    }
+    .cart-container {
+        display: flex;
+        flex-direction: row;
+        .logo-container {
+            @extend .icon-container;
+        }
+        .text {
+            @extend .text-container;
+        }
+    }
+}
